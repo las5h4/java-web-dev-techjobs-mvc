@@ -30,13 +30,13 @@
     <table class="job-listing" th:fragment="job-listing">
         <th:block th:each="job : ${jobs}">
             <tr>
-                <td>
-                    ID: <span th:text="${job.id}">#</span><br/>
-                    Name: <span th:text="${job.name}">#</span><br/>
-                    Employer: <span th:text="${job.employer}">#</span><br/>
-                    Location: <span th:text="${job.location}">#</span><br/>
-                    Position Type: <span th:text="${job.positionType}">#</span><br/>
-                    Skill: <span th:text="${job.coreCompetency}">#</span>
+                <td style="font-weight: bolder">
+                    ID: <span class="job-data" th:text="${job.id}">#</span><br/>
+                    Name: <span class="job-data" th:text="${job.name}">#</span><br/>
+                    Employer: <span class="job-data" th:text="${job.employer}">#</span><br/>
+                    Location: <span class="job-data" th:text="${job.location}">#</span><br/>
+                    Position Type: <span class="job-data" th:text="${job.positionType}">#</span><br/>
+                    Skill: <span class="job-data" th:text="${job.coreCompetency}">#</span>
                 </td>
             </tr>
         </th:block>
