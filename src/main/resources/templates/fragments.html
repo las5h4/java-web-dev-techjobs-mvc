@@ -33,10 +33,10 @@
                 <td style="font-weight: bolder">
                     ID: <span class="job-data" th:text="${job.id}">#</span><br/>
                     Name: <span class="job-data" th:text="${job.name}">#</span><br/>
-                    Employer: <span class="job-data" th:text="${job.employer}">#</span><br/>
-                    Location: <span class="job-data" th:text="${job.location}">#</span><br/>
-                    Position Type: <span class="job-data" th:text="${job.positionType}">#</span><br/>
-                    Skill: <span class="job-data" th:text="${job.coreCompetency}">#</span>
+                    Employer: <a class="job-data" th:href="@{/list/jobs(column=employer,value=${job.employer})}" th:text="${job.employer}"></a><br/>
+                    Location: <a class="job-data" th:href="@{/list/jobs(column=location,value=${job.location})}" th:text="${job.location}">#</a><br/>
+                    Position Type: <a class="job-data" th:href="@{/list/jobs(column=positionType,value=${job.positionType})}" th:text="${job.positionType}">#</a><br/>
+                    Skill: <a class="job-data" th:href="@{/list/jobs(column=coreCompetency,value=${job.coreCompetency})}" th:text="${job.coreCompetency}">#</a>
                 </td>
             </tr>
         </th:block>
